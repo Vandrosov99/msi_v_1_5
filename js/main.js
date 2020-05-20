@@ -145,6 +145,8 @@ submitBtn.addEventListener('click', function (e) {
             return response.json();
         })
         .then((data) => {
+
+            console.log(data)
             if (data.total > 1) {
                 let randomInt = getRandomInt(data.total)
                 StoreTempInLocalStorage(data.result[randomInt]);
@@ -153,6 +155,8 @@ submitBtn.addEventListener('click', function (e) {
                     favcontainer.firstChild.remove();
                 }
                 createJoke(data.result[randomInt].url, data.result[randomInt].id, data.result[randomInt].value, data.result[randomInt].hours, data.result[randomInt].categories, 'joke', favcontainer);
+            } else if (data.total == 0) {
+                alert("no jokes for this words")
             } else {
 
                 StoreTempInLocalStorage(data);
@@ -162,6 +166,7 @@ submitBtn.addEventListener('click', function (e) {
                 }
 
                 createJoke(data.url, data.id, data.value, data.hours, data.categories, 'joke', favcontainer);
+
             }
         });
 
@@ -286,8 +291,8 @@ function deletefromFav(target) {
 }
 
 function createJoke(url, id, text, hours, categories, name, container) {
-
-    if (categories.length == 0) {
+    console.log(categories)
+    if (categories.hasOwnProperty('length') && categories.length == 0) {
         categories = "default"
     }
     if (hours === undefined) {
