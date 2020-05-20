@@ -46,7 +46,7 @@ body {
     border-radius: 2px;
 
     background: #FFFFFF;
-    transition: .4s cubic-bezier(.77, 0, .18, 1);
+    transition: .2s cubic-bezier(.77, 0, .18, 1);
 }
 
 .burger::after {
@@ -102,6 +102,7 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
+    overflow-y: auto;
 
 }
 
@@ -504,19 +505,5 @@ input[type=radio]:checked+.options__radio>span:before {
         min-height: 100vh;
         transform: translateX(0);
 
-    }
-}
-
-
-@media(max-width:950px) {
-    .right_section {
-        transform: translateX(200vw);
-        transition: .5s ease-in-out;
-    }
-
-    .right_section.active {
-        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.3);
-        min-height: 100vh;
-        transform: translateX(0);
     }
 }
