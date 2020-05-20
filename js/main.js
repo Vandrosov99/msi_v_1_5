@@ -345,6 +345,7 @@ function createJoke(url, id, text, hours, categories, name, container) {
            </div>
             <div class="category_api">${categories}</div>
         </div>`;
+        div.className += ' active';
     }
 
 
