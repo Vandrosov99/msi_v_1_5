@@ -103,7 +103,6 @@ body {
     right: 0;
     bottom: 0;
     overflow-y: auto;
-
 }
 
 
@@ -372,6 +371,15 @@ input[type=radio]:checked+.options__radio>span:before {
 .options__button:disabled,
 .options__button[disabled] {
     background: linear-gradient(92.01deg, rgb(184, 184, 184) 0%, rgb(124, 124, 124) 100%);
+}
+
+.joke.active {
+    background: #FFFFFF;
+    border: 1px solid #F8F8F8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 67px 40px 45px 100px;
 }
 
 .joke {
