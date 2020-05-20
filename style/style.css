@@ -514,4 +514,14 @@ input[type=radio]:checked+.options__radio>span:before {
         transform: translateX(0);
 
     }
+
+    @media(max-width:415px) {
+        .right_section.active {
+            padding: 40px 10px 10px 10px;
+        }
+
+        .joke.active {
+            padding: 67px 20px 45px 100px;
+        }
+    }
 }
