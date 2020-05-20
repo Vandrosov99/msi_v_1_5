@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSI</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="left_section">
+                <div class="flex_top">
+                    <h1 class="logo">MSI 2020</h1>
+                    <div class="flex_top">
+                        <div class="burger"></div>
+                        <h1 class="favourite">Favourite</h1>
+                    </div>
+                </div>
+                <main>
+                    <h2>Hey!</h2>
+                    <p>Let`s try to find a joke for you:</p>
+
+                    <form class="options" class="main_controller">
+                        <input id="random-option" class="radio_btn" type="radio" name="options-radio" value="Random"
+                            checked>
+                        <label for="random-option" class="options__radio"><span
+                                class="options__radio--icon"></span>Random</label>
+                        <input id="category-option" class="radio_btn" type="radio" name="options-radio"
+                            value="Category">
+                        <label for="category-option" class="options__radio"><span
+                                class="options__radio--icon"></span>From
+                            categories</label>
+                        <div class="options__categories">
+                            <label class="options__categories--label"><input type="radio"
+                                    class="options__categories--input" name="category__radio" value="animal">
+                                <span class="options__categories--text">animal</span>
+                            </label>
+                            <label class="options__categories--label"><input type="radio"
+                                    class="options__categories--input" name="category__radio" value="dev">
+                                <span class="options__categories--text">dev</span>
+                            </label>
+                            <label class="options__categories--label"><input type="radio"
+                                    class="options__categories--input" name="category__radio" value="career">
+                                <span class="options__categories--text">career</span></label>
+                        </div>
+                        <input id="search-option" class="radio_btn" type="radio" name="options-radio" value="Search">
+                        <label for="search-option" class="options__radio"><span
+                                class="options__radio--icon"></span>Search</label>
+                        <div class="options__search">
+                            <input class="options__search--input" type="text" placeholder="Free text search...">
+                        </div>
+                        <div class="submit-btn">Get a Joke</div>
+                    </form>
+                    </form>
+                    <div class="ourFavJokes">
+                    </div>
+                </main>
+            </div>
+            <div class="right_section showBTN ">
+                <div class="flex_container">
+                    <div id="burger" class="burger"></div>
+                    <h1 class="favourite">Favourite</h1>
+                </div>
+                <div class="newJokes">
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+<script src="js/main.js"></script>
+
+</html>
