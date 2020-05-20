@@ -5,6 +5,8 @@ idbur.addEventListener('click', function () {
     right_section.classList.toggle('showBTN')
     burger.classList.toggle('active')
     right_section.classList.toggle('active')
+    idbur.classList.toggle('active')
+
 })
 
 burger.addEventListener('click', function (event) {
@@ -12,6 +14,7 @@ burger.addEventListener('click', function (event) {
     right_section.classList.toggle('active')
     burger.classList.toggle('active')
     right_section.classList.toggle('showBTN')
+    idbur.classList.toggle('active')
 
 })
 
