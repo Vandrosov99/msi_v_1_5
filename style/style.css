@@ -90,6 +90,10 @@ body {
 
 
 /* right */
+::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+}
 
 .right_section {
     background: #f8f8f8;
@@ -103,6 +107,7 @@ body {
     right: 0;
     bottom: 0;
     overflow-y: auto;
+
 }
 
 
@@ -379,7 +384,7 @@ input[type=radio]:checked+.options__radio>span:before {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-top: 50px;
-    padding: 67px 40px 45px 100px;
+    padding: 67px 40px 45px 40px;
 }
 
 .joke {
@@ -406,13 +411,13 @@ input[type=radio]:checked+.options__radio>span:before {
     margin: 5px;
     width: 25px;
     height: 20px;
-    background: url(../icons/heart.e977fb9e.svg) no-repeat center center;
+    background: url(../icons/emptyHeart.svg) no-repeat center center;
     border-radius: 50%;
     transition: .5s ease-in;
 }
 
 .heart.active {
-    background: url(../icons/heart-active.0865c832.svg) no-repeat center center;
+    background: url(../icons/filledHeart.svg) no-repeat center center;
 }
 
 .body-info {
@@ -424,7 +429,7 @@ input[type=radio]:checked+.options__radio>span:before {
     width: 40px;
     height: 40px;
     padding: 10px;
-    background: url(../icons/message.ee31211c.svg) no-repeat center center;
+    background: url(../icons/msg.svg) no-repeat center center;
     display: flex;
     justify-content: center;
     margin-right: 20px;
@@ -441,7 +446,7 @@ input[type=radio]:checked+.options__radio>span:before {
 }
 
 .body-info__main .text {
-    padding: 5px 0 28px;
+    padding: 10px 10px 28px;
     font-size: 18px;
     line-height: 26px;
     word-wrap: break-word;
@@ -515,9 +520,59 @@ input[type=radio]:checked+.options__radio>span:before {
 
     }
 
+    @media(max-width:750px) {
+        .joke {
+            padding: 67px 40px 45px 50px;
+
+        }
+
+        .flex_top {
+            margin-right: 15px;
+        }
+
+        .right_section .favourite {
+            margin-right: 30px;
+        }
+    }
+
+    @media(max-width:414px) {
+        .container {
+            padding: 20px;
+        }
+
+        .right_section .favourite {
+            margin-right: 10px;
+            margin-top: -20px;
+        }
+
+        #burger {
+            margin-top: -20px;
+
+        }
+    }
+
+
+    @media(max-width:375px) {
+
+        .right_section .favourite {
+            margin-right: px;
+        }
+    }
+
+    @media(max-width:320px) {
+
+        .right_section .favourite {
+            margin-right: 7px;
+        }
+    }
+
     @media(max-width:415px) {
         .right_section.active {
             padding: 40px 10px 10px 10px;
+        }
+
+        .flex_top {
+            margin-right: 15px;
         }
 
         .joke.active {

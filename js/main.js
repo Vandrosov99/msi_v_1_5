@@ -145,8 +145,6 @@ submitBtn.addEventListener('click', function (e) {
             return response.json();
         })
         .then((data) => {
-
-            console.log(data)
             if (data.total > 1) {
                 let randomInt = getRandomInt(data.total)
                 StoreTempInLocalStorage(data.result[randomInt]);
@@ -291,7 +289,6 @@ function deletefromFav(target) {
 }
 
 function createJoke(url, id, text, hours, categories, name, container) {
-    console.log(categories)
     if (categories.hasOwnProperty('length') && categories.length == 0) {
         categories = "default"
     }
