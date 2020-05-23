@@ -6,5 +6,5 @@
 Working version of app [https://chuck-vovis.netlify.app/](https://chuck-vovis.netlify.app/)
 # **How To Run**
 just download the project and open *index.html* file.
-
-
+# **View**
+![One of views](/icons/pres.png)
