@@ -510,6 +510,7 @@ input[type=radio]:checked+.options__radio>span:before {
     .right_section {
         transform: translateX(200vw);
         transition: .5s ease-in-out;
+        width: 100%;
     }
 
     .right_section.active {
@@ -576,7 +577,7 @@ input[type=radio]:checked+.options__radio>span:before {
         }
 
         .joke.active {
-            padding: 67px 20px 45px 100px;
+            padding: 67px 20px 45px 40px;
         }
     }
 }
